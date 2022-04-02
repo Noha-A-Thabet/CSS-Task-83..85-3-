@@ -1,0 +1,65 @@
+/* Q4 */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* / // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .parent>div {
+        background-color: lightgray;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .parent>div>h2 {
+        color: red;
+    }
+
+    .parent>div {
+        background-color: lightgray;
+        text-align: center;
+        font-weight: bold;
+        width: calc(100% / 3 - 10px);
+    }
+
+    .parent .one {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .parent>div {
+        background-color: lightgray;
+        text-align: center;
+        font-weight: bold;
+        width: calc(100% / 2 - 10px);
+    }
+
+    .parent>div>h2 {
+        color: darkcyan;
+    }
+
+    .parent .one {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .parent .four {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
